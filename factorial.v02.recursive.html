@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive Factorial v.02</title>
+</head>
+<body>
+    <script>
+    function factorial(n) {
+    //A recursive version of the factorial function
+        if(n < 0) return; //says dont do anything, stop all activiy...termination 
+        if (n === 0) return 1; // the last value returned
+        return n * factorial(n-1); // how to increment
+        //here using argument "n" also as an interator (like "i" in for loops)
+    }
+
+    var usernum = parseInt(prompt("Number please"));
+    console.log(usernum + "! is " + factorial(usernum));
+
+    // if the user enters 5 
+    //than the results: 5! (5x4x3x2x1 = 120)
+
+
+    </script>
+</body>
+</html>
