@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy New year v02</title>
+</head>
+<body>
+    <script>
+        function countdown(start) {
+            console.log(start);
+            
+            let nextnumber= start -1;
+            
+            if (nextnumber > 0 ){
+                countdown(nextnumber);
+            }else {
+                console.log("HAPPY NEW YEAR!");
+            }
+        }
+        let sectillnewyears = parseInt(prompt("How many seconds there are until New Years Eve?"));
+        
+        countdown(sectillnewyears);
+    </script>
+ </body>
+</html>
