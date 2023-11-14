@@ -12,9 +12,10 @@
             console.log(start);
             let nextnumber= start -1;
             if (nextnumber > 0 ){
-                countdown(nextnumber);
+                setTimeout(countdown, 1000, nextnumber);
             }else {
-                console.log("HAPPY NEW YEAR!");
+                setTimeout(function(){
+                    console.log("HAPPY NEW YEAR!");}, 1000, nextnumber);
             }
         }
         let sectillnewyears = parseInt(prompt("How many seconds there are until New Years Eve?"));
